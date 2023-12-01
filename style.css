@@ -1,7 +1,7 @@
 * {
     padding: 0;
     margin: 0;
-    font-family: 'Montserrat', sans-serif;
+    font-family: "Formular", sans-serif;
     color: #111827;
 }
 
@@ -29,7 +29,7 @@ body {
 }
 
 .logo-name p {
-    padding-top: 7%;
+    margin-top: 7%;
 }
 
 .header-text {
@@ -37,12 +37,28 @@ body {
 }
 
 .header-content {
-    align-items: end;
+    justify-content: right;
+
+}
+
+.header-sell {
+    width: 200%;
+    margin-top: 0.2%;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+}
+
+.header-line {
+    margin-left: 7%;
+    margin-right: 2%;
+    border-left: solid 1px rgba(167, 139, 250, 1);
 }
 
 .header-num {
+    width: 200%;
     font-size: 36px;
-    font-weight: 900;
+    font-weight: 800;
     line-height: 40px;
 }
 
@@ -50,18 +66,27 @@ body {
     font-size: 24px;
     font-weight: 300;
     line-height: 32px;
+    width: 200%;
 }
 
 .header-url {
     display: flex;
     justify-content: space-between;
+    margin-top: 3%;
 }
 
+.header-url ul {
+    width: 50%;
+}
 
+.header-url a {
+    text-decoration: none
+}
 
 .header-url li {
     list-style-type: none;
     display: inline;
+    margin-right: 2%;
 }
 
 .logo-name p {
@@ -72,4 +97,93 @@ body {
 
 .header-text {
     justify-content: flex-end;
+}
+
+.header-url button {
+    display: flex;
+    padding: 10px 28px;
+    justify-content: center;
+    align-items: center;
+    gap: 4px;
+    border-radius: 4px;
+
+    border: none;
+    color: white;
+    background: #8B5CF6;
+}
+
+main {
+    padding-right: 10%;
+    padding-left: 10%;
+    margin-top: 5%;
+}
+
+.img-calcul {
+    display: flex;
+}
+
+.about-us {
+
+}
+
+.about-us h1 {
+    font-size: 30px;
+    font-weight: 900;
+    line-height: 40px;
+    width: 89%;
+}
+
+.about-us p {
+    padding-top: 1%;
+    padding-bottom: 3%;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 28px;
+    width: 87%;
+}
+
+.calculator {
+    width: 97%;
+    background-color: white;
+    border-radius: 20px;
+    padding: 2%;
+    text-align: center;
+}
+
+.calculator h2 {
+    margin-bottom: 3%;
+    font-size: 30px;
+    font-weight: 700;
+    line-height: 36px;
+}
+
+.calculator p {
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+    width: 58%;
+    margin-left: 20%;
+}
+
+.application {
+
+}
+
+.calculator-input {
+    display: inline-grid;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: 20% 20% 20% 20% 20%;
+}
+
+.application-but  button {
+    background-color: #8B5CF6;
+    color: white;
+    border-color: #8B5CF6;
+    border-radius: 20px;
+    box-shadow: none;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 24px;
+    padding: 10px 28px;
 }
