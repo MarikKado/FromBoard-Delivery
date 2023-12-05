@@ -120,10 +120,15 @@ main {
 
 .img-calcul {
     display: flex;
+    align-items: center;
 }
 
 .about-us {
 
+}
+
+.about-us img {
+    align-items: flex-end;
 }
 
 .about-us h1 {
@@ -134,8 +139,8 @@ main {
 }
 
 .about-us p {
-    padding-top: 1%;
-    padding-bottom: 3%;
+    padding-top: 5%;
+    padding-bottom: 5%;
     font-size: 20px;
     font-weight: 400;
     line-height: 28px;
@@ -148,6 +153,7 @@ main {
     border-radius: 20px;
     padding: 2%;
     text-align: center;
+    margin-left: 2%;
 }
 
 .calculator h2 {
@@ -161,7 +167,7 @@ main {
     font-size: 16px;
     font-weight: 400;
     line-height: 24px;
-    width: 58%;
+    width: 60%;
     margin-left: 20%;
 }
 
@@ -170,20 +176,87 @@ main {
 }
 
 .calculator-input {
-    display: inline-grid;
-    grid-template-columns: 50% 50%;
-    grid-template-rows: 20% 20% 20% 20% 20%;
+    display: flex;
+    flex-wrap: wrap;
+    padding-left: 7%;
+    padding-right: 7%;
+    justify-content: space-between;
 }
 
-.application-but  button {
+.calculator-input input {
+    font-size: 1em;
+    width: 40%;
+    margin-top: 5%;
+    margin-left: 4%;
+    padding: 2%;
+    border: solid 2px #111827;
+    border-radius: 3px;
+}
+
+.calculator-input .name {
+    width: 92%;
+}
+
+.application-but {
+    margin-top: 3%;
+    margin-left: 7%;
+    margin-right: 3%;
+    align-items: center;
+    margin-bottom: 4%;
+}
+
+.application-but button {
     background-color: #8B5CF6;
     color: white;
     border-color: #8B5CF6;
-    border-radius: 20px;
+    border-radius: 3px;
     box-shadow: none;
+    width: 92%;
     cursor: pointer;
     font-size: 16px;
     font-weight: 700;
     line-height: 24px;
-    padding: 10px 28px;
+    padding-top: 2%;
+    padding-bottom: 2%;
+}
+
+.our-advantages {
+    margin-top: 7%;
+}
+
+.our-advantages h2 {
+    font-size: 30px;
+    text-align: center;
+    margin-bottom: 3%;
+}
+
+.our-advantages ul {
+    display: grid;
+    list-style-type: none;
+    grid-template-columns: 30% 30% 30%;
+}
+
+.our-advantages li {
+    margin-right: 10%;
+}
+
+.our-advantages-cell {
+    margin-top: 4%;
+    display: flex;
+    align-items: center;
+}
+
+.our-advantages-cell-text {
+    margin-left: 5%;
+}
+
+.our-advantages-cell-text h3 {
+    font-size: 24px;
+}
+
+.our-advantages-cell p {
+    font-size: 14px;
+
+    font-weight: 400;
+    line-height: 20px;
 }
