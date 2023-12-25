@@ -9,14 +9,18 @@ body {
     background-color: #e6e6e6;
 }
 
+/*header*/
+
 .header {
-    background-color: white;
     flex-direction: row;
-    padding-right: 10%;
-    padding-left: 10%;
-    padding-top: 1%;
-    padding-bottom: 1%;
     flex-wrap: wrap;
+    background-color: #e6e6e6;
+}
+
+.container {
+    max-width: 80vw;
+    margin: 24px 10%;
+    background-color: white;
 }
 
 .no-nav {
@@ -25,28 +29,56 @@ body {
 }
 
 .logo-name {
-    display: flex;
+
 }
 
-.logo-name p {
+.logo p {
     margin-top: 7%;
+    font-size: 24px;
+    font-weight: 800;
+    display: inline-block;
+    vertical-align: center;
 }
 
 .header-text {
     display: flex;
+    margin-right: 3%;
+    justify-content: flex-end;
 }
 
 .header-content {
     justify-content: right;
+}
 
+.header-content-num {
+    justify-content: right;
+}
+
+.header-num {
+    width: 200%;
+    font-size: 34px;
+    font-weight: 800;
+    line-height: 40px;
+}
+
+.header-text-tel {
+    font-size: 24px;
+    font-weight: 300;
+    width: 200%;
+    line-height: 40px;
 }
 
 .header-sell {
-    width: 200%;
     margin-top: 0.2%;
     font-size: 16px;
     font-weight: 400;
     line-height: 24px;
+    text-align: end;
+    width: 120%;
+}
+
+.header-sell p {
+    margin-right: 7%;
 }
 
 .header-line {
@@ -55,28 +87,18 @@ body {
     border-left: solid 1px rgba(167, 139, 250, 1);
 }
 
-.header-num {
-    width: 200%;
-    font-size: 36px;
-    font-weight: 800;
-    line-height: 40px;
-}
-
-.header-text-tel {
-    font-size: 24px;
-    font-weight: 300;
-    line-height: 32px;
-    width: 200%;
-}
-
 .header-url {
     display: flex;
     justify-content: space-between;
     margin-top: 3%;
+    width: 100%;
+    -webkit-box-align: center;
+    align-items: center;
 }
 
-.header-url ul {
+#menu {
     width: 50%;
+    font-size: 18px;
 }
 
 .header-url a {
@@ -87,16 +109,9 @@ body {
     list-style-type: none;
     display: inline;
     margin-right: 2%;
-}
-
-.logo-name p {
-    font-size: 24px;
-    font-weight: 900;
-    display: inline-block;
-}
-
-.header-text {
-    justify-content: flex-end;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 24px;
 }
 
 .header-url button {
@@ -106,11 +121,15 @@ body {
     align-items: center;
     gap: 4px;
     border-radius: 4px;
-
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 24px;
     border: none;
     color: white;
     background: #8B5CF6;
 }
+
+/*body*/
 
 main {
     padding-right: 10%;
@@ -233,21 +252,28 @@ main {
 .our-advantages ul {
     display: grid;
     list-style-type: none;
-    grid-template-columns: 30% 30% 30%;
+    grid-template-columns: 35% 35% 35%;
 }
 
 .our-advantages li {
-    margin-right: 10%;
+
 }
 
 .our-advantages-cell {
     margin-top: 4%;
     display: flex;
     align-items: center;
+
 }
 
 .our-advantages-cell-text {
     margin-left: 5%;
+    width: 48%;
+}
+
+.our-advantages-cell img {
+    width: 120px;
+    height: 120px;
 }
 
 .our-advantages-cell-text h3 {
@@ -260,3 +286,5 @@ main {
     font-weight: 400;
     line-height: 20px;
 }
+
+/*gap: 0.5rem;*/
